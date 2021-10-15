@@ -9,12 +9,17 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
-        echo "Login";
-    ?>
-
-    <?php
-        echo "Sign Up"
-    ?>
+    <div class="row">
+    <div class="col-sm-6">
+        <?php
+            echo "Login";
+        ?>
+    </div>
+    <div class="col-sm-6">
+        <?php
+            echo "Sign Up"
+        ?>
+    </div>
+    </div>
 </body>
 </html>
