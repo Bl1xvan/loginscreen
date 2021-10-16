@@ -10,12 +10,23 @@
 </head>
 <body>
     <div class="row">
-    <div class="col-sm-6">
-        <?php
-            echo "Login";
-        ?>
+    <div class="col-sm-6 text-center bg-primary">
+        <form action="/action.php">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="form-control" placeholder="Enter Email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="pwd" class="form-control" placeholder="Enter Password" name="pwd">
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" name="remember">Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-default">
+        </form>
     </div>
-    <div class="col-sm-6">
+    <div class="col-sm-6 text-center bg-info">
         <?php
             echo "Sign Up"
         ?>
