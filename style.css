@@ -1,0 +1,10 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+.formcont{
+    width: 90%;
+    margin: auto;
+    padding: 30px;
+    display: block;
+    background-color: rgb(101, 204, 156);
+}
