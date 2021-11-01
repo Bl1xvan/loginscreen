@@ -11,25 +11,43 @@
 <body>
     <div class="row">
     <div class="col-sm-6 text-center bg-primary">
-        <form action="/action.php">
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" class="form-control" placeholder="Enter Email" name="email">
-            </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="pwd" class="form-control" placeholder="Enter Password" name="pwd">
-            </div>
-            <div class="checkbox">
-                <label><input type="checkbox" name="remember">Remember me</label>
-            </div>
-            <button type="submit" class="btn btn-default">
-        </form>
+        <div class="form-cont">
+            <form action="/action.php">
+                <h2>Login</h2>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="form-control" placeholder="Enter Email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="pwd" class="form-control" placeholder="Enter Password" name="pwd">
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" name="remember">Remember me</label>
+                </div>
+                <button type="submit" class="btn btn-default">
+            </form>
+        </div>
     </div>
     <div class="col-sm-6 text-center bg-info">
-        <?php
-            echo "Sign Up"
-        ?>
+        <div class="form-cont">
+            <form action="/action.php">
+                <h2>Sign Up</h2>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="form-control" placeholder="Enter Email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="pwd" class="form-control" placeholder="Enter Password" name="pwd">
+                </div>
+                <div class="form-group">
+                    <label for="password">Re-enter Password</label>
+                    <input type="password" id="pwd" class="form-control" placeholder="Re-enter Password" name="pwd">
+                </div>
+                <button type="submit" class="btn btn-default">
+            </form>
+        </div>
     </div>
     </div>
 </body>
