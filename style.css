@@ -6,5 +6,18 @@
     margin: auto;
     padding: 30px;
     display: block;
-    background-color: rgb(101, 204, 156);
+    
+}
+
+.page-header h1{
+    font-size: 50pt;
+    color:rgb(253, 166, 242);
+}
+
+#login{
+    background-color: rgb(147, 255, 219);
+}
+
+#signup{
+    background-color: rgb(94, 176, 182);
 }
