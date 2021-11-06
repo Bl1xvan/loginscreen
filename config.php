@@ -1,7 +1,7 @@
 <?php
 
 $server = "localhost";
-$user = "root";
+$username = "root";
 $pass = "";
 $database = "login_pure_register_coding";
 
