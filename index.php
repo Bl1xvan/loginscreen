@@ -61,6 +61,8 @@ if(isset($_POST['submit'])){
                         <label><input type="checkbox" name="remember">Remember me</label>
                     </div>
                     <button type="submit" class="btn btn-default">Submit</button>
+                    <br/>
+                    <p class="login-register-text">Don't have an account? <a href="register.php">Register Here</a>.</p>
                 </form>
             </div>
         </div>
