@@ -18,13 +18,13 @@
                 "authProtocol": "default"
             },
             "previewLimit": 50,
-            "server": "localhost",
+            "server": "localhost/phpmyadmin",
             "port": 3306,
-            "askForPassword": true,
             "driver": "MySQL",
             "username": "root",
             "database": "login_pure_register_coding",
-            "name": "myapache"
+            "name": "myapache",
+            "password": ""
         }
     ]
 }
