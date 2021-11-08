@@ -7,7 +7,7 @@ error_reporting(0);
 session_start();
 
 if(isset($_SESSION['username'])){
-    header("Location: index.php");
+    header("Location: welcome.php");
 }
 
 if(isset($_POST['submit'])){
@@ -15,6 +15,30 @@ if(isset($_POST['submit'])){
     $email = $_POST['email'];
     $password = md5($_POST['password']);
     $cpassword = md5($_POST['cpassword']);
+}
+
+if ($password == $cpassword) {
+    $sql = "SELECT * FROM users WHERE email='$email'";
+    $result = mysqli_query($conn, $sql);
+    if (!$result->num_rows > 0) {
+        $sql = "INSERT INTO users (username, email, password)
+                VALUES ('$username', '$email', '$password')";
+        $result = mysqli_query($conn, $sql);
+        if ($result) {
+            echo "<script>alert('Wow! User Registration Completed.')</script>";
+            $username = "";
+            $email = "";
+            $_POST['password'] = "";
+            $_POST['cpassword'] = "";
+        } else {
+            echo "<script>alert('Woops! Something Wrong Went.')</script>";
+        }
+    } else {
+        echo "<script>alert('Woops! Email Already Exists.')</script>";
+    }
+    
+} else {
+    echo "<script>alert('Password Not Matched.')</script>";
 }
 
 
@@ -55,9 +79,9 @@ if(isset($_POST['submit'])){
                     </div>
                     <div class="form-group">
                         <label for="password">Re-enter Password</label>
-                        <input type="password" id="pwd" class="form-control" placeholder="Re-enter Password" name="password" value="<?php echo $_POST['cpassword'] ?>" required>
+                        <input type="password" id="pwd" class="form-control" placeholder="Re-enter Password" name="cpassword" value="<?php echo $_POST['cpassword'] ?>" required>
                     </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
+                    <button type="submit" name="submit" class="btn btn-default">Submit</button>
                     <p class="login-register-text">Have an account? <a href="index.php">Login Here</a>.</p>
                 </form>
             </div>

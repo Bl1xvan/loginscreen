@@ -18,7 +18,7 @@
                 "authProtocol": "default"
             },
             "previewLimit": 50,
-            "server": "localhost/phpmyadmin",
+            "server": "localhost",
             "port": 3306,
             "driver": "MySQL",
             "username": "root",
